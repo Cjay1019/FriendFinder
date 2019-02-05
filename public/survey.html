@@ -23,152 +23,194 @@
     <title>Meme Match</title>
   </head>
   <body>
-    <div class="container">
-      <form class="border border-light p-5">
-        <h1 class="mb-4 text-center">Meme Survey</h1>
-        <hr />
+    <div class="card container px-0">
+      <h1 class="card-header purple-gradient white-text text-center py-4 mb-3">
+        Meme Survey
+      </h1>
+      <div class="card-body px-lg-5 pt-0">
+        <form class="p-5">
+          <h3>About You</h3>
 
-        <h3>About You</h3>
+          <label for="textInput">Name (Required)</label>
+          <input
+            type="text"
+            id="name"
+            class="form-control mb-4"
+            placeholder="Name"
+          />
 
-        <label for="textInput">Name (Required)</label>
-        <input
-          type="text"
-          id="name"
-          class="form-control mb-4"
-          placeholder="Name"
-        />
+          <label for="textInput"
+            >Link to an image of your favorite meme (Required)</label
+          >
+          <input
+            type="text"
+            id="image"
+            class="form-control mb-4"
+            placeholder="Image Link"
+          />
+          <hr />
 
-        <label for="textInput"
-          >Link to an image of your favorite meme (Required)</label
-        >
-        <input
-          type="text"
-          id="image"
-          class="form-control mb-4"
-          placeholder="Image Link"
-        />
-        <hr />
+          <h3>Rate These Memes</h3>
 
-        <h3>Rate These Memes</h3>
+          <label for="select-1">Default select</label>
+          <select class="browser-default custom-select mb-4" id="select-1">
+            <option value="" disabled="" selected="">Choose your option</option>
+            <option value="1">1 (Lame)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Dank)</option>
+          </select>
 
-        <label for="select-1">Default select</label>
-        <select class="browser-default custom-select mb-4" id="select-1">
-          <option value="" disabled="" selected="">Choose your option</option>
-          <option value="1">1 (Lame)</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5 (Dank)</option>
-        </select>
+          <label for="select-2">Default select</label>
+          <select class="browser-default custom-select mb-4" id="select-2">
+            <option value="" disabled="" selected="">Choose your option</option>
+            <option value="1">1 (Lame)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Dank)</option>
+          </select>
 
-        <label for="select-2">Default select</label>
-        <select class="browser-default custom-select mb-4" id="select-2">
-          <option value="" disabled="" selected="">Choose your option</option>
-          <option value="1">1 (Lame)</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5 (Dank)</option>
-        </select>
+          <label for="select-3">Default select</label>
+          <select class="browser-default custom-select mb-4" id="select-3">
+            <option value="" disabled="" selected="">Choose your option</option>
+            <option value="1">1 (Lame)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Dank)</option>
+          </select>
 
-        <label for="select-3">Default select</label>
-        <select class="browser-default custom-select mb-4" id="select-3">
-          <option value="" disabled="" selected="">Choose your option</option>
-          <option value="1">1 (Lame)</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5 (Dank)</option>
-        </select>
+          <label for="select-4">Default select</label>
+          <select class="browser-default custom-select mb-4" id="select-4">
+            <option value="" disabled="" selected="">Choose your option</option>
+            <option value="1">1 (Lame)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Dank)</option>
+          </select>
 
-        <label for="select-4">Default select</label>
-        <select class="browser-default custom-select mb-4" id="select-4">
-          <option value="" disabled="" selected="">Choose your option</option>
-          <option value="1">1 (Lame)</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5 (Dank)</option>
-        </select>
+          <label for="select">Default select</label>
+          <select class="browser-default custom-select mb-4" id="select-5">
+            <option value="" disabled="" selected="">Choose your option</option>
+            <option value="1">1 (Lame)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Dank)</option>
+          </select>
 
-        <label for="select">Default select</label>
-        <select class="browser-default custom-select mb-4" id="select-5">
-          <option value="" disabled="" selected="">Choose your option</option>
-          <option value="1">1 (Lame)</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5 (Dank)</option>
-        </select>
+          <label for="select-5">Default select</label>
+          <select class="browser-default custom-select mb-4" id="select">
+            <option value="" disabled="" selected="">Choose your option</option>
+            <option value="1">1 (Lame)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Dank)</option>
+          </select>
 
-        <label for="select-5">Default select</label>
-        <select class="browser-default custom-select mb-4" id="select">
-          <option value="" disabled="" selected="">Choose your option</option>
-          <option value="1">1 (Lame)</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5 (Dank)</option>
-        </select>
+          <label for="select-6">Default select</label>
+          <select class="browser-default custom-select mb-4" id="select-6">
+            <option value="" disabled="" selected="">Choose your option</option>
+            <option value="1">1 (Lame)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Dank)</option>
+          </select>
 
-        <label for="select-6">Default select</label>
-        <select class="browser-default custom-select mb-4" id="select-6">
-          <option value="" disabled="" selected="">Choose your option</option>
-          <option value="1">1 (Lame)</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5 (Dank)</option>
-        </select>
+          <label for="select-7">Default select</label>
+          <select class="browser-default custom-select mb-4" id="select-7">
+            <option value="" disabled="" selected="">Choose your option</option>
+            <option value="1">1 (Lame)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Dank)</option>
+          </select>
 
-        <label for="select-7">Default select</label>
-        <select class="browser-default custom-select mb-4" id="select-7">
-          <option value="" disabled="" selected="">Choose your option</option>
-          <option value="1">1 (Lame)</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5 (Dank)</option>
-        </select>
+          <label for="select-8">Default select</label>
+          <select class="browser-default custom-select mb-4" id="select-8">
+            <option value="" disabled="" selected="">Choose your option</option>
+            <option value="1">1 (Lame)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Dank)</option>
+          </select>
 
-        <label for="select-8">Default select</label>
-        <select class="browser-default custom-select mb-4" id="select-8">
-          <option value="" disabled="" selected="">Choose your option</option>
-          <option value="1">1 (Lame)</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5 (Dank)</option>
-        </select>
+          <label for="select-9">Default select</label>
+          <select class="browser-default custom-select mb-4" id="select-9">
+            <option value="" disabled="" selected="">Choose your option</option>
+            <option value="1">1 (Lame)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Dank)</option>
+          </select>
 
-        <label for="select-9">Default select</label>
-        <select class="browser-default custom-select mb-4" id="select-9">
-          <option value="" disabled="" selected="">Choose your option</option>
-          <option value="1">1 (Lame)</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5 (Dank)</option>
-        </select>
+          <label for="select-10">Default select</label>
+          <select class="browser-default custom-select mb-4" id="select-10">
+            <option value="" disabled="" selected="">Choose your option</option>
+            <option value="1">1 (Lame)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Dank)</option>
+          </select>
 
-        <label for="select-10">Default select</label>
-        <select class="browser-default custom-select mb-4" id="select-10">
-          <option value="" disabled="" selected="">Choose your option</option>
-          <option value="1">1 (Lame)</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5 (Dank)</option>
-        </select>
+          <button
+            class="btn btn-lily btn-rounded btn-block my-4"
+            id="submit-btn"
+            type="submit"
+            data-toggle="modal"
+            data-target="#memerModal"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
 
-        <button
-          class="btn btn-lily btn-rounded btn-block my-4"
-          id="submit-btn"
-          type="submit"
-        >
-          Submit
-        </button>
-      </form>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="memerModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="memerModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTitle">Your Meme Match</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-lily btn-rounded"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
   <script

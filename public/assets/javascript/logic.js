@@ -1,3 +1,9 @@
+new WOW().init();
+
+$("#start-btn").click(function() {
+  window.location.href = "./survey";
+});
+
 $("#submit-btn").on("click", function(event) {
   event.preventDefault();
   var newMemer = {
@@ -40,6 +46,7 @@ $("#submit-btn").on("click", function(event) {
         .trim()
     ]
   };
-  console.log(newMemer);
-  $.post("/api/newmemer", newMemer).then(function(data) {});
+  $.post("/api/newmemer", newMemer).then(function(data) {
+    console.log(data);
+  });
 });

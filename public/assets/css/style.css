@@ -1,3 +1,10 @@
+.hm-gradient {
+  background: linear-gradient(
+    40deg,
+    rgba(0, 51, 199, 0.3),
+    rgba(209, 149, 249, 0.3)
+  );
+}
 .heading {
   margin: 0 6rem;
   font-weight: 700;
