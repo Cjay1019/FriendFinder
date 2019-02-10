@@ -7,26 +7,21 @@ module.exports = function(app) {
 
   app.post("/api/newmemer", function(req, res) {
     var matchValues = [];
-    if (memers.length === 0) {
-      res.json("First");
-      memers.push(req.body);
-      return;
-    } else {
-      for (i = 0; i < memers.length; i++) {
-        var matchValue = 0;
-        if (memers[i].name === req.body.name) {
-          res.json("Exists");
-          return;
-        } else {
-          for (j = 0; j < memers[i].scores.length; j++) {
-            var difference = memers[i].scores[j] - req.body.scores[j];
-            matchValue += Math.abs(difference);
-          }
-          matchValues.push(matchValue);
+    for (i = 0; i < memers.length; i++) {
+      var matchValue = 0;
+      if (memers[i].name === req.body.name) {
+        res.json("Exists");
+        return;
+      } else {
+        for (j = 0; j < memers[i].scores.length; j++) {
+          var difference = memers[i].scores[j] - req.body.scores[j];
+          matchValue += Math.abs(difference);
         }
-        memers[i].match = matchValue;
+        matchValues.push(matchValue);
       }
+      memers[i].match = matchValue;
     }
+
     var match = matchValues.indexOf(Math.min(...matchValues));
     res.json(memers[match]);
     memers.push(req.body);
